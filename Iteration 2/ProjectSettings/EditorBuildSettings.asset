@@ -5,10 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: d612580a53730c64ea429e0b0dfbdba0
-  - enabled: 1
+  - enabled: 0
     path: Assets/StarfieldMaterials/Scenes/DemoScene.unity
     guid: 4dbac6043b5252d428c7c7447d24b268
+  - enabled: 1
+    path: Assets/Scenes/iteration2.unity
+    guid: a91bdbb806bc1fe46b65664a79906f95
+  - enabled: 1
+    path: Assets/Scenes/Room for 1.unity
+    guid: 3006fc302e4b71c408ff4b2ab36801fd
+  - enabled: 1
+    path: Assets/Scenes/Room for 2.unity
+    guid: 732e9a2d7e1b3654a907c99d9d8653d5
+  - enabled: 1
+    path: Assets/Scenes/Room for 3.unity
+    guid: d03d52a204769ce43b1c3a7765d33694
+  - enabled: 1
+    path: Assets/Scenes/Room for 4.unity
+    guid: ef65a1b6963659d40ae10d819fa5f077
   m_configObjects: {}
