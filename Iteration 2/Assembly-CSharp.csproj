@@ -60,6 +60,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\avatargenerator\scripts\AvatarGenerator.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Casanova\Prelude.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Casanova\World.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\DebugConsole.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\Event.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\EventAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\EventController.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\EventPlayer.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Extensions\HelperFunctions.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Extensions\ListExtensions.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Extensions\LoopExtensions.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\GameAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Graph\GenericVector.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Graph\GraphTraveler.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Grid\Grid.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Grid\Heap.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Grid\Node.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\NormalAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\NpcMovementController.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\ActionObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\EventObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\NpcObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\PlayerObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\ActionsParser.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\OnStartUp.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\PersonParser.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\SettingsParser.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\XmlNodule.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityEvent.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityEventController.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityNpc.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityPlayer.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\NetworkController.cs" />
     <Compile Include="Assets\PlayerNameInputField.cs" />
@@ -173,39 +206,64 @@
     <Compile Include="Assets\Resources\Photon\PhotonUnityNetworking\Demos\PunCockpit\Scripts\ThirdParty\PunCockpitEmbed.cs" />
     <Compile Include="Assets\Resources\Photon\PhotonUnityNetworking\Demos\Shared Assets\Scripts\DocLinks.cs" />
     <Compile Include="Assets\StarfieldMaterials\Scripts\Move.cs" />
+    <None Include="Assets\Resources\actions.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Resources\settings.xml" />
     <None Include="Assets\MixedRealityToolkit.Providers\Version.txt" />
     <None Include="Assets\Resources\Photon\PhotonUnityNetworking\link.xml" />
+    <None Include="Assets\Resources\eventActions.xml" />
     <None Include="Assets\Resources\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Kenney Assets\Copyrights.txt" />
+    <None Include="Assets\Resources\players.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Resources\Photon\PhotonLibs\Photon3Unity3D.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\MixedRealityToolkit.Services\Version.txt" />
     <None Include="Assets\Resources\Photon\PhotonLibs\release_history.txt" />
+    <None Include="Assets\Resources\eventReactions.xml" />
     <None Include="Assets\MixedRealityToolkit.Services\License.txt" />
     <None Include="Assets\MixedRealityToolkit.Providers\License.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Resources\Photon\PhotonUnityNetworking\Demos\Shared Assets\Skin\eurof_tt.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\The Soccer Ball Alphabet\README.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Resources\Photon\PhotonUnityNetworking\Demos\Shared Assets\Skin\3dText.shader" />
     <None Include="Assets\StarfieldMaterials\README\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Resources\Photon\PhotonUnityNetworking\readme.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Resources\events.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Resources\Photon\PhotonUnityNetworking\changelog.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMR.Editor">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMR">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity2018-5/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -409,19 +467,19 @@
       <HintPath>C:/Program Files/Unity2018-5/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Assets/Resources/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Assets/Resources/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Assets/Resources/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Assets/Resources/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity2018-5/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

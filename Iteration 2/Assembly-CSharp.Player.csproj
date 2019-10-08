@@ -384,10 +384,10 @@
       <HintPath>Assets/Resources/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/shal465/Downloads/Iteration-2-master/Iteration-2-master/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/shal465/Documents/Github/Iteration-2/Iteration 2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity2018-5\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -1009,6 +1009,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\avatargenerator\scripts\AvatarGenerator.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Casanova\Prelude.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Casanova\World.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\DebugConsole.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\Event.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\EventAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\EventController.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Events\EventPlayer.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Extensions\HelperFunctions.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Extensions\ListExtensions.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Extensions\LoopExtensions.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\GameAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Graph\GenericVector.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Graph\GraphTraveler.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Grid\Grid.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Grid\Heap.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Grid\Node.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\NormalAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\NpcMovementController.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\ActionObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\EventObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\NpcObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Objects\PlayerObject.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\ActionsParser.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\OnStartUp.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\PersonParser.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\SettingsParser.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Parser\XmlNodule.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityAction.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityEvent.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityEventController.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityNpc.cs" />
+    <Compile Include="Assets\avatargenerator\scripts\Proxys\UnityPlayer.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\NetworkController.cs" />
     <Compile Include="Assets\PlayerNameInputField.cs" />
